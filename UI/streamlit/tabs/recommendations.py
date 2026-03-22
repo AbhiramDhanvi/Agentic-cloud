@@ -98,7 +98,7 @@ def recommendations(st,tab_reco):
         else:
             # Initial/normal load: just show the latest available run
             rid = get_latest_run_id_cached()
-            if rid is "":
+            if rid == "":
                 status_slot.error("Could not determine a run_id from Athena.")
             else:
                 df = fetch_recs_by_run(rid)

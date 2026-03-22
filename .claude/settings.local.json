@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python app_ui.py)",
+      "Bash(streamlit run:*)"
+    ]
+  }
+}

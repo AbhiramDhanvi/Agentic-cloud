@@ -19,6 +19,8 @@ def get_latest_run_id_cached() -> Optional[str]:
     # if df.empty:
     #     return None
     #val = df.iloc[0].get("run_id")
+    if df.empty:
+        return None
     val = df.iloc[0, 0]
     print(validate_argmax)
     print("run_id : " +val)
